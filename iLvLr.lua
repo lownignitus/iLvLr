@@ -325,7 +325,7 @@ end
 function GetItemLinkInfo(link)
 	local itemColor, itemString, itemName
 	if ( link ) then
-		itemColor, itemString, itemName = link:match("(|c%x+)|Hitem:([-%d:]+)|h%[(.-)%]|h|r");
+		itemColor, itemString, itemName = link:match("(|c%x+)|Hitem:([-%d:%a]+)|h%[(.-)%]|h|r");
 	end
 	return itemName, itemString, itemColor
 end
